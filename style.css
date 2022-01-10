@@ -1,4 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+body{
+    background-color: rgb(20, 18, 18);
+}
+/* Head section Start */
+header{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.top-section{
+    display: flex;
+   
+}
+.left-site{
+    flex: 1;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title{
+    
+    font-size: 45px;
+    font-weight: 900;
+    color: transparent;
+    position: relative;
+
+}
+.banner-title::before{
+    content:'Programming-hero';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(85, 236, 231);
+    animation: type 3s linear infinite ;
+}
+
+    
+.btn{
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: 4px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .8s;
+}
+.btn:hover{
+    background: transparent;
+    color: #fff;
+
+}
+.right-site{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-site img{
+    width: 90%;
+    margin-top: 50px;
+    border :5px solid rgb(85, 236, 231) ;
+    border-radius: 4px;
+}
+
+
+@keyframes type{
+    0%{
+        content:'P|';
+    }
+    4%{
+        content:'Pr|';
+    }
+    8%{
+        content:'Pro|';
+    }
+    12%{
+        content:'Prog|';
+    }
+    16%{
+        content:'Progr|';
+    }
+    20%{
+        content:'Progra|';
+    }
+    24%{
+        content:'Program|';
+    }
+    28%{
+        content:'Programm|';
+    }
+    32%{
+        content:'Programmi|';
+    }
+    38%{
+        content:'Programmin|';
+    }
+    40%{
+        content:'Programming|';
+    }
+    44%{
+        content:'Programming-|';
+    }
+    48%{
+        content:'Programming-h|';
+    }
+    52%{
+        content:'Programming-he|';
+    }
+    56%{
+        content:'Programming-her|';
+    }
+    60%{
+        content:'Programming-hero|';
+    }
+    65%,
+    83%{
+        content:'Programming-hero|';
+    }
+    84%{
+        content:'Programming-her|';
+    }
+    85%{
+        content:'Programming-he';
+    }
+    86%{
+        content:'Programming-h|';
+    }
+    87%{
+        content:'Programming-|';
+    }
+    88%{
+        content:'Programming|';
+    }
+    89%{
+        content:'Programmin|';
+    }
+    90%{
+        content:'Programmi|';
+    }
+    91%{
+        content:'Programm|';
+    }
+    92%{
+        content:'Programm|';
+    }
+    93%{
+        content:'Program|';
+    }
+    94%{
+        content:'Progra|';
+    }
+    95%{
+        content:'Progr|';
+    }
+    96%{
+        content:'Prog|';
+    }
+    97%{
+        content:'Pro|';
+    }
+    98%{
+        content:'Pr|';
+    }
+    99%{
+        content:'P|';
+    }
+    100%{
+        content:'|';
+    }
+    
+}
+/* Head section End */
