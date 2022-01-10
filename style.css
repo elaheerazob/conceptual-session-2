@@ -8,12 +8,13 @@ body{
     background-color: rgb(20, 18, 18);
 }
 /* Head section Start */
-header{
+header,main{
     max-width: 90%;
     margin: 0 auto;
 }
 .top-section{
     display: flex;
+    margin-bottom: 50px;
    
 }
 .left-site{
@@ -177,3 +178,87 @@ header{
     
 }
 /* Head section End */
+
+.section-title{
+    text-align: center;
+    margin: 60px 0;
+    
+}
+.section-title h1{
+    color: rgb(255, 255, 255);
+    border-left:5px solid rgb(85, 236, 231);
+    border-right:5px solid rgb(85, 236, 231);
+    display: inline-block;
+    padding: 0 10px;
+   
+}
+.gallry{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.border{
+    background-color: #fff;
+    position: absolute;
+    transition: 0.7s ease-in;
+}
+.border.top, .border.button{
+    width: 270px;
+    height: 4px;
+}
+.border.left, .border.right{
+    width: 4px;
+    height: 270px;
+}    
+
+.border.top{
+    top: 4px;
+    right:100% ;
+}
+.border.button{
+    bottom: 4px;
+    left:100% ;
+}
+.border.left{
+    left: 4px;
+    top:100% ;
+}
+.border.right{
+    right: 4px;
+    bottom: 100%;
+}
+.photo:hover .border.top{
+    right: 4px;
+}
+.photo:hover .border.button{
+    left: 4px;
+}
+.photo:hover .border.left{
+    top: 4px;
+}
+.photo:hover .border.right{
+    bottom: 4px;
+}
+.gallry-title{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gallry-title h1{
+    color: #fff;
+}
